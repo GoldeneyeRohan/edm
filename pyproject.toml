@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "edm"
+version = "0.0.1"
+authors = [
+  { name="Rohan Sinha", email="rhnsinha@stanford.edu" },
+]
+description = "Rohan Sinha's fork of the EDM paper repo"
+readme = "README.md"
+requires-python = ">=3.8, <3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+dependencies = [
+    "numpy>=1.20,<1.26.4",
+    "click>=8.0",
+    "pillow>=8.3.1",
+    "scipy>=1.7.1",
+    "torch==1.12.1",
+    "psutil",
+    "requests",
+    "tqdm",
+    "imageio",
+    "imageio-ffmpeg>=0.4.3",
+    "pyspng"
+]
+
+[project.urls]
+Homepage = "https://github.com/GoldeneyeRohan/edm.git"
+Issues = "https://github.com/GoldeneyeRohan/edm.git/issues"
