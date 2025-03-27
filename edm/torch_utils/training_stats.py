@@ -13,9 +13,9 @@ code."""
 import re
 import numpy as np
 import torch
-import dnnlib
+import edm.dnnlib as dnnlib
 
-from . import misc
+from edm.torch_utils import misc
 
 #----------------------------------------------------------------------------
 

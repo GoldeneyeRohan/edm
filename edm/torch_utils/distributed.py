@@ -7,7 +7,7 @@
 
 import os
 import torch
-from . import training_stats
+from edm.torch_utils import training_stats
 
 #----------------------------------------------------------------------------
 

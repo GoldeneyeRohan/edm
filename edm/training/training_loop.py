@@ -15,10 +15,10 @@ import pickle
 import psutil
 import numpy as np
 import torch
-import dnnlib
-from torch_utils import distributed as dist
-from torch_utils import training_stats
-from torch_utils import misc
+import edm.dnnlib as dnnlib
+from edm.torch_utils import distributed as dist
+from edm.torch_utils import training_stats
+from edm.torch_utils import misc
 
 #----------------------------------------------------------------------------
 
