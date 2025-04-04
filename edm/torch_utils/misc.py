@@ -39,6 +39,18 @@ def constant(value, shape=None, dtype=None, device=None, memory_format=None):
         _constant_cache[key] = tensor
     return tensor
 
+
+#----------------------------------------------------------------------------
+# Variant of constant() that inherits dtype and device from the given
+# reference tensor by default.
+
+def const_like(ref, value, shape=None, dtype=None, device=None, memory_format=None):
+    if dtype is None:
+        dtype = ref.dtype
+    if device is None:
+        device = ref.device
+    return constant(value, shape=shape, dtype=dtype, device=device, memory_format=memory_format)
+
 #----------------------------------------------------------------------------
 # Replace NaN/Inf with specified numerical values.
 
